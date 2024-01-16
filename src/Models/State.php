@@ -1,10 +1,11 @@
 <?php
 
-namespace App\Models;
+namespace NetoJocelino\StatesCitiesBrazil\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
-class City extends Model
+class State extends Model
 {
 
     use SoftDeletes;
@@ -16,6 +17,7 @@ class City extends Model
      */
     protected $fillable = [
         'name',
+        'abbr',
     ];
 
     /**
@@ -28,14 +30,6 @@ class City extends Model
         'updated_at',
     ];
 
-    /**
-     * The attributes that should be casted to native types.
-     *
-     * @var array
-     */
-    protected $casts = [
-        'state_id' => 'integer',
-    ];
 
     /**
      * The attributes that should be mutated to dates.
@@ -47,12 +41,12 @@ class City extends Model
     ];
 
     /**
-     * Get the state that owns the city.
+     * Get all of the cities for the state.
      */
-    public function state()
+    public function city()
     {
 
-        return $this->belongsTo(State::class, 'state_id');
+        return $this->hasMany(City::class);
 
     }
 

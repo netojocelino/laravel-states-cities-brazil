@@ -1,8 +1,7 @@
 <?php
 
-namespace Database\Seeders;
+namespace NetoJocelino\StatesCitiesBrazil\Database\Seeders;
 
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
