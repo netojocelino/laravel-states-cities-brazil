@@ -1,0 +1,42 @@
+{
+    "name": "netojocelino/laravel-states-cities-brazil",
+    "description": "Base de dados com todos os estados e cidades do Brasil.",
+    "type": "library",
+    "keywords": [
+        "laravel",
+        "cache"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Magno Fernando Brixner Biét",
+            "email": "magno.biet@gmail.com"
+        },
+        {
+            "name": "Neto Jocelino",
+            "email": "netojocelino@yahoo.com.br"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "NetoJocelino\\StatesCitiesBrazil\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=5.5.9",
+        "illuminate/database": "5.0 - 5.8|^6|^7|^8|^9",
+        "illuminate/filesystem": "5.0 - 5.8|^6.0|^7.0|^8.0|^9.0|^10.0"
+    },
+    "require-dev": {
+        "illuminate/container": "5.0 - 5.8|^6.0|^7.0|^8.0|^9.0|^10.0"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "laravel": {
+            "providers": [
+                "NetoJocelino\\StatesCitiesBrazil\\LaravelServiceProvider"
+            ]
+        }
+    }
+}
