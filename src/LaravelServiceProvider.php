@@ -7,7 +7,7 @@ use Illuminate\Filesystem\Filesystem;
 use Illuminate\Support\Collection;
 use Illuminate\Support\ServiceProvider;
 
-class PermissionServiceProvider extends ServiceProvider
+class LaravelServiceProvider extends ServiceProvider
 {
     public function boot()
     {
